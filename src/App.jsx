@@ -1,21 +1,30 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header.jsx';
+import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-// Importa las otras páginas según las vayas creando
+import About from './pages/About';
+import MenuPage from './pages/MenuPage';
+import ReservationPage from './pages/ReservationPage';
+import Contact from './pages/Contact';
+import './App.css';
 
-const App = () => {
+function App() {
   return (
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        {/* Define otras rutas aquí */}
-      </Routes>
-      <Footer />
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/menu" element={<MenuPage />} />
+          <Route path="/reservations" element={<ReservationPage />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
     </Router>
   );
-};
+}
 
 export default App;
