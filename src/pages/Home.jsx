@@ -4,7 +4,7 @@ const Home = () => {
     return (
       <div className="home">
         <section className="hero">
-          <img src="/path/to/hero-image.jpg" alt="Delicious Food" />
+          <img src="https://washington.org/sites/default/files/family-dining-outdoors-with-young-child-at-bluejacket_ddc-photo.jpg" alt="Delicious Food" />
           <h1>Bienvenidos a HomeSlice Pizza</h1>
           <p>Descubre el sabor auténtico de nuestras pizzas artesanales.</p>
         </section>

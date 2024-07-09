@@ -31,7 +31,7 @@ const ReservationForm = () => {
       <input type="time" id="time" name="time" value={formData.time} onChange={handleChange} />
       
       <label htmlFor="guests">Número de Invitados:</label>
-      <input type="number" id="guests" name="guests" value={formData.guests} onChange={handleChange} min="1" max="10" />
+      <input type="number" id="guests" name="guests" value={formData.guests} onChange={handleChange} min="1" max="200" />
       
       <button type="submit">Reservar</button>
     </form>
